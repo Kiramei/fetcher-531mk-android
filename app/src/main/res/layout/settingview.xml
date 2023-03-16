@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:text="@string/bk_msg"
+        android:textSize="18sp"
+        android:lineHeight="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/msg"
+   />
+    <EditText android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top"
+        android:autofillHints=""  android:id="@+id/msgbox">
+    </EditText>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/backup"
+        android:id="@+id/backup"
+        android:layout_marginTop="20dp"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/paste"
+        android:id="@+id/paste"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/recover"
+        android:id="@+id/recover"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

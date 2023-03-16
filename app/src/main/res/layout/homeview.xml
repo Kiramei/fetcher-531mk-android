@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_view"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:background="#fff"
+        app:mtf_image="@drawable/ic_search"
+        app:mtf_backgroundColor="#51ABF3"
+        app:mtf_labelColor="#333"
+        app:mtf_openKeyboardOnFocus="true"
+        >
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:autofillHints="SearchBox"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/search_hint"
+            tools:ignore="LabelFor">
+        </EditText>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/relative"
+        tools:ignore="MissingConstraints">
+
+        <com.yalantis.taurus.PullToRefreshView
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <GridView
+                android:id="@+id/manga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:paddingTop="10dp"
+                android:verticalSpacing="10dp" />
+        </com.yalantis.taurus.PullToRefreshView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

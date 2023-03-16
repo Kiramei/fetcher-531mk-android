@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Kika Comic</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Favourites</string>
+    <string name="menu_slideshow">History</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Favourites</string>
+    <string name="menu_send">Exit</string>
+    <string name="details">Details</string>
+    <string name="star">Star</string>
+    <string name="sites">Sites</string>
+    <string name="conti">Continue</string>
+    <string name="start">Start</string>
+    <string name="todo">TODO</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="loading">正在加载中…</string>
+    <string name="bk_msg">\t数据备份与回复：①若要备份，请点击“备份”，然后复制文本框生成内容保存到便签等文本文件中②若要回复，请将备份过的内容粘贴到文本框中，然后点击“恢复”</string>
+    <string name="backup">备份</string>
+    <string name="paste">复制</string>
+    <string name="recover">恢复</string>
+    <string name="search_hint">Search for something</string>
+    <string name="copy">Copy Successfully!</string>
+    <string name="stars">Star successfully!</string>
+    <string name="unstars">Unstar successfully!</string>
+    <string name="ru">The content must be something wrong!</string>
+    <string name="rs">The recovery was successful!</string>
+    <string name="confirm">Are you 18 or older?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="zzz">共有</string>
+    <string name="readed">曾经阅读过</string>
+    <string name="to_read">还未开始阅读</string>
+    <string name="page">页</string>
+</resources>

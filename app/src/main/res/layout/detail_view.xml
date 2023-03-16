@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:fitsSystemWindows="true"
+                                                   android:background="#fff"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"
+                                                       android:layout_marginTop="?attr/actionBarSize"
+    >
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_d"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                tools:ignore="MissingConstraints"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/read"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                tools:ignore="MissingConstraints"
+                android:background="#22000000"
+                android:textSize="50sp"
+                android:layout_marginBottom="225dp"
+                android:textColor="@android:color/white"
+        />
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/page_num"
+                android:textSize="19sp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#55000000"
+                android:layout_width="match_parent" app:layout_constraintBottom_toTopOf="@+id/title_s"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_s"
+                android:textSize="35sp"
+                android:textColor="#FFFFFF"
+                android:gravity="top"
+                android:background="#55000000"
+                android:layout_height="200dp"
+                android:layout_width="match_parent" app:layout_constraintBottom_toBottomOf="@+id/image_d"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/details"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:textColor="#444"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:id="@+id/appCompatTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/back1"
+            android:layout_width="match_parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_ab_back_material_light"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/star"
+            android:layout_width="60dp"
+            android:backgroundTint="@color/v3"
+            android:src="@drawable/star_"
+            app:fabCustomSize="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/todo" tools:ignore="UnusedAttribute" android:layout_marginRight="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
